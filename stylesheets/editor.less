@@ -35,3 +35,21 @@ atom-text-editor[mini].is-focused, atom-text-editor[mini].is-focused::shadow {
     -webkit-box-shadow: -2px 0 10px 2px #222;
   }
 }
+
+.minimap {
+    .editor {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#e8ecf1),to(#d1d8e0));
+        background-image: -webkit-linear-gradient(top, #e8ecf1, #d1d8e0);
+    }
+
+    .minimap-visible-area {
+        background-color: #080877;
+    }
+
+    .minimap-scroller {
+
+        &.visible {
+            display: none;
+        }
+    }
+}
